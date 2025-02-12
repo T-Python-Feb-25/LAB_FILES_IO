@@ -3,7 +3,8 @@ import json
 def add_to_do_item(dic:dict,title:str):
     '''add new to do list to the file to_do.json if the file dosent exit it will create a new file 
        args:
-            dic(dict):a dictionry that contin the to do list the key is the title of the task and the valus is the date and done'''
+            dic(dict):a dictionry that contin the to do list the key is the title of the task and the valus is the date and done
+            title(String):to check if there is the same title in to do list'''
     try:
         with open("to_do.json","r",encoding="UTF-8") as file:
             data=json.load(file)
